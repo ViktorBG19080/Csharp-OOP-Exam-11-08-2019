@@ -45,7 +45,7 @@ namespace ViceCity.Core
                     return $"Successfully added {name} of type: {type}";
 
             }
-            catch (InvalidCastException e)
+            catch(InvalidOperationException e)
             {
                 return e.Message;
             }
